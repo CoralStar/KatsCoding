@@ -243,18 +243,21 @@ Aside .content-wrapper p {
 }
 
 /* Article */
-article{
-  width 33%;
+article {
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
+  padding-left: 10%;
 }
 
 article i {
-  font-size: 3.75em;
+  font-size: 10.75em;
   color: #a0d2e2;
   margin-top: 40px;
+  width: 100%;
 }
 
 article p {
