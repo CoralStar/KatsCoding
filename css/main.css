@@ -258,9 +258,10 @@ article i {
   color: #a0d2e2;
   margin-top: 40px;
   width: 100%;
+  text-align: center;
 }
 
-article p {
+article .work-description {
   font-size: 1em;
   text-align: center;
   margin: 0;
