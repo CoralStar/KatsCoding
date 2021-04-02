@@ -239,37 +239,42 @@ aside .content-wrapper p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   margin: 0 0 0 20px;
 }
 
 /* Article */
 article {
-  width: 70%;
+  width: 63%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
   text-align: center;
   padding-left: 10%;
 }
 
-article i {
+article .fontawesome-icon i {
   font-size: 10.75em;
   color: #a0d2e2;
-  margin-top: 30px 0;
-  width: 70%;
+  width: 100%;
   text-align: center;
-  display: inline-block;
-  flex-flow: row;
-  text-align: center;
+  margin: 0;
 }
+
 
 article .work-description {
   font-size: 1em;
   text-align: center;
   width: 50%;
   margin-bottom: 15%;
+}
+
+article .work-description h3 {
+  font-size: 1.25em;
+  text-align: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -360,16 +365,101 @@ article .work-description {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles here */
+  .content-wrapper {
+      max-width: 640px;
+      margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  /* Aside */
+  aside .content-wrapper h3 {
+    padding-left: 20%;
+  }
+
+  aside .content-wrapper p {
+    padding-left: 20%;
+  }
+
+  /* Article */
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-flex-start;
+    flex-flow: column wrap;
+    flex-basis: 30%;
+    padding: 0 0 10% 20%;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles here */
+
+  header {
+    padding: 15px 0;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
+  /* Aside */
+  aside .content-wrapper h3 {
+    width: 100%;
+    padding-left: 40%;
+  }
+
+  aside .content-wrapper p {
+    width: 100%;
+    padding-left: 40%;
+
+  }
+
+  /* Article */
+  section {
+    width: 90%;
+    align-items: center;
+    column-count: 3;
+    padding: 0 0 10% 10%;
+  }
+
+  article {
+    flex-basis: 33%;
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  article .work-description {
+    flex-flow: row wrap;
+  }
 
 /* ==========================================================================
    Print styles.
