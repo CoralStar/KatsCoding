@@ -401,6 +401,10 @@ article .work-description h3 {
     padding: 0 0 10% 20%;
   }
 
+  article .fontawesome-icon i {
+    padding-left: 30%;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
