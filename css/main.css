@@ -402,8 +402,8 @@ article .work-description h3 {
   }
 
   article .fontawesome-icon i {
-    padding-left: 30%;
-  }
+        margin: 0;
+      }
 
 }
 
@@ -461,8 +461,13 @@ article .work-description h3 {
     flex-direction: row;
   }
 
+  article .fontawesome-icon i {
+        padding-left: 30%;
+      }
+
   article .work-description {
     flex-flow: row wrap;
+
   }
 
 /* ==========================================================================
