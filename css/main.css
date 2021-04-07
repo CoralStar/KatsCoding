@@ -111,7 +111,7 @@ a {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Satisfy', cursive;
   font-weight: 500;
   font-size: 1.875em;
 }
@@ -277,6 +277,45 @@ article .work-description h3 {
   width: 100%;
 }
 
+/* -------------------- Mobile Styles - Work Page -------------------- */
+
+  .prices h2 {
+  font-size: 3.75em;
+  font-weight: 400;
+  padding-left: 20%;
+}
+
+  .prices h4 {
+    margin-bottom: 0;
+  }
+
+  .prices p {
+  font-size: 1.1em;
+  text-align: center;
+  padding-bottom: 50%;
+}
+
+  p {
+  text-align: center;
+  padding: 0 10% 0 10%;
+}
+
+  .projects h2 {
+    font-size: 3.75em;
+    font-weight: 400;
+    padding-left: 20%;
+    margin-bottom: 0;
+}
+
+  .projects a {
+  color: #4c99e6;
+  padding: 50% 0 90% 0;
+}
+
+/* -------------------- Mobile Styles - About Page -------------------- */
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -405,6 +444,18 @@ article .work-description h3 {
         margin: 0;
       }
 
+/* -------------------- Tablet Styles - Work Page -------------------- */
+
+  .prices h2 {
+    padding-left: 0;
+  }
+
+  .prices p {
+    padding-bottom: 10%;
+  }
+
+  /* -------------------- Tablet Styles - About Page -------------------- */
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -467,6 +518,39 @@ article .work-description h3 {
 
   article .work-description {
     flex-flow: row wrap;
+}
+
+/* -------------------- Website Styles - Work Page -------------------- */
+
+  .prices h2 {
+    flex-basis: 100%;
+    padding-left: 50%;
+  }
+
+  .prices article {
+    flex-basis: 100%;
+  }
+
+  .prices ul {
+    flex-basis: 100%;
+    padding-left: 50%;
+  }
+
+  .projects h2 {
+    flex-basis: 100%;
+    padding-left: 50%;
+  }
+
+  .projects article {
+    flex-basis: 100%;
+  }
+
+  .projects ul {
+    flex-basis: 100%;
+    padding-left: 50%;
+  }
+
+/* -------------------- Website Styles - About Page -------------------- */
 
   }
 
