@@ -314,7 +314,39 @@ article .work-description h3 {
 
 /* -------------------- Mobile Styles - About Page -------------------- */
 
+  main {
+    width: 90%;
+    padding-left: 5%;
+  }
 
+  .about span {
+    font-family: 'Satisfy', cursive;
+    font-weight: 500;
+    font-size: 1.7em;
+    text-indent: 0;
+  }
+
+  .about p {
+    text-align: left;
+    text-indent: 20px;
+    line-height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
+  .about h2 {
+    text-align: center;
+    padding: 10% 0 0 0;
+    font-size: 2.3em;
+  }
+
+  .about ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20% 0 20% 0;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -456,6 +488,8 @@ article .work-description h3 {
 
   /* -------------------- Tablet Styles - About Page -------------------- */
 
+    /*None*/
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -551,6 +585,16 @@ article .work-description h3 {
   }
 
 /* -------------------- Website Styles - About Page -------------------- */
+
+  .about p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about ul li {
+    padding: 5% 0 2% 0;
+  }
 
   }
 
