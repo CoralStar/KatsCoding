@@ -29,6 +29,31 @@
 </head>
 
 <body>
+
+  <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v10.0'
+            });
+          };
+
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+          attribution="setup_tool"
+          page_id="102626891945667">
+        </div>
+
   <header>
     <div class="content-wrapper">
       <figure>
@@ -47,22 +72,28 @@
    </div>
   </header>
 
-<article class="prices">
-  <h2>Page Coming Soon!</h2>
-</article>
+    <h2>Contact</h2>
+  <main>
+  <article class="contact-time">
+    <h4>Times Available</h4>
+    <ul>
+      <li>Monday-Tuesday: 12:00pm - 5:00pm CST</li>
+      <li>Wednesday-Friday: 9:00am - 5:00pm CST</li>
+    </ul>
+  </article>
 
-  <footer>
-    <div class="content-wrapper">
-      <h2>Let's Chat!</h2>
-      <p>If you're interested, but not sure where to start, that's okay! You can email me at anytime to get your
-        free quote on your project.
-        <br>I usually respond in an hour!</p>
-        <br>
-        <a href="mailto:KatsCodingCorner@gmail.com"><img src="../img/icon-envelope.png" id="envelope"
-                      alt="envelope icon" />KatsCodingCorner@gmail.com</a>
-        </div>
+  <article class="contact">
+    <ul>
+        <li><a href="https://www.facebook.com/KatsCoding"><img src="../img/facebook.png" alt="facebook icon" /></a></li>
+        <li><a href="https://www.linkedin.com/in/kathrynn-taylor/"><img src="../img/linkedin.png" alt="linkedin icon" /></a></li>
+        <li><a href="https://github.com/CoralStar"><img src="../img/github.png" alt="github icon" /></a></li>
+        <li><a href="mailto:KatsCodingCorner@gmail.com"><img src="../img/icon-envelope-blue.png" alt="envelope icon"/></a><li>
+    </ul>
+  </article>
+</main>
+
+  <footer class="con-foot">
         <img src="../img/kat-logo.png" alt="Kat Logo">
-
   </footer>
 
   <!-- Add your site or application content here -->

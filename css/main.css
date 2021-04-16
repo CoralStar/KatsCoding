@@ -114,6 +114,7 @@ h2 {
   font-family: 'Satisfy', cursive;
   font-weight: 500;
   font-size: 1.875em;
+  text-align: center;
 }
 
 h3,
@@ -127,6 +128,8 @@ h4 {
 p {
   font-size: .875em;
   line-height: 1.285em;
+  text-align: center;
+  padding: 0 10% 0 10%;
 }
 
 .content-wrapper {
@@ -295,11 +298,6 @@ article .work-description h3 {
   padding-bottom: 50%;
 }
 
-  p {
-  text-align: center;
-  padding: 0 10% 0 10%;
-}
-
   .projects h2 {
     font-size: 3.75em;
     font-weight: 400;
@@ -345,8 +343,39 @@ article .work-description h3 {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 20% 0 20% 0;
+    padding: 0 0 20% 0;
   }
+
+
+/* -------------------- Mobile Styles - Contact Page -------------------- */
+
+.contact-time h4 {
+  padding-left: 15%;
+  padding-top: 20%;
+}
+
+.contact-time ul li {
+  text-align: center;
+  padding-bottom: 20%;
+}
+
+.contact article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.contact ul li {
+  text-align: center;
+  padding-bottom: 20%;
+}
+
+.contact img {
+  width: 200%;
+  display: flex;
+  padding: 0 20% 20% 0;
+}
 
 /* ==========================================================================
    Helper classes
@@ -490,6 +519,23 @@ article .work-description h3 {
 
     /*None*/
 
+/* -------------------- Tablet Styles - Contact Page -------------------- */
+
+.contact h4 {
+  padding: 0%;
+}
+
+.contact ul {
+  width: 100%;
+}
+
+.contact ul li {
+  width: 7%;
+  display: inline-block;
+  float: left;
+  padding: 0 15% 0 0;
+}
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -595,6 +641,46 @@ article .work-description h3 {
   .about ul li {
     padding: 5% 0 2% 0;
   }
+
+
+/* -------------------- Website Styles - Contact Page -------------------- */
+
+.contact-time article {
+  flex-basis: 100%;
+}
+
+.contact-time h4 {
+  width: 100%;
+  justify-content: center;
+  padding-left: 60%;
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+
+.contact-time ul {
+  width: 100%;
+  justify-content: center;
+  padding-left: 60%;
+}
+
+.contact article {
+  flex-basis: 100%;
+}
+
+.contact ul {
+  width: 100%;
+  justify-content: center;
+  padding-left: 65%;
+}
+
+.contact img {
+  width: 250%;
+  padding-bottom: 80%;
+}
+
+.con-foot img {
+  width: 10%;
+}
 
   }
 
